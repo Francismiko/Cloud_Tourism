@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "item-container": "/components/item-container/item-container",
+    "router-btn": "/components/router-btn/router-btn"
+  }
+}

@@ -1,0 +1,7 @@
+/* components/router-btn/router-btn.wxss */
+.default {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  background-color: black;
+}

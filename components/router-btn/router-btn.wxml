@@ -1,0 +1,3 @@
+<!--components/router-btn/router-btn.wxml-->
+<view class="default class-o"></view>
+<text>{{btnText}}</text>

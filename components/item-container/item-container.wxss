@@ -1,0 +1,9 @@
+.layout {
+  display: block;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 88vw;
+  min-height: 5vh;
+  margin: 2vw 6vw;
+  background-color: white;
+}

@@ -1,0 +1,5 @@
+<van-tabbar active="{{ active }}" bind:change="onChange" placeholder="true">
+	<van-tabbar-item icon="location-o">发现周边</van-tabbar-item>
+	<van-tabbar-item icon="wap-home-o">首页</van-tabbar-item>
+	<van-tabbar-item icon="user-o">我的</van-tabbar-item>
+</van-tabbar>

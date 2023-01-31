@@ -1,0 +1,11 @@
+.child_center{
+  text-align: center;
+}
+
+.btn-1 {
+	background-color: crimson !important;
+}
+
+.custom {
+	background-color: rgba(255, 255, 255, 0) !important;
+}

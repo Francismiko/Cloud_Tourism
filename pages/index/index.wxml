@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<van-search value="{{ value }}" label="地点" placeholder="请输入搜索关键词" use-action-slot bind:change="onChange" bind:search="onSearch">
+  <view slot="action" bind:tap="onClick">搜索</view>
+</van-search>
+
+<item-container>
+  <van-grid>
+    <van-grid-item class="child_center" use-slot>
+      <router-btn class-o="btn-1" btnText="示例"></router-btn>
+    </van-grid-item>
+    <van-grid-item class="child_center" use-slot>
+      <router-btn btnText="示例"></router-btn>
+    </van-grid-item>
+    <van-grid-item class="child_center" use-slot>
+      <router-btn btnText="示例"></router-btn>
+    </van-grid-item>
+    <van-grid-item class="child_center" use-slot>
+      <router-btn btnText="示例"></router-btn>
+    </van-grid-item>
+  </van-grid>
+</item-container>
+
+<item-container>
+  <van-grid clickable column-num="2">
+    <van-grid-item icon="home-o" link-type="navigateTo" url="/pages/dashboard/index" text="周庄古镇" />
+    <van-grid-item icon="home-o" link-type="reLaunch" url="/pages/dashboard/index" text="木渎古镇" />
+  </van-grid>
+</item-container>
+
+<van-notice-bar scrollable text="{{ scrollText }}" />
+<van-cell custom-class="custom" title="{{sight.title}}" value="{{ sight.value }}" is-link />
+<van-grid column-num="3" clickable="true">
+  <van-grid-item icon="{{sightCard[index].icon}}" text="{{sightCard[index].text}}" wx:for="{{ sightCard }}" />
+</van-grid>
+
+<van-divider />
+<van-grid gutter="{{ 10 }}" column-num="1" clickable="true" center="false">
+  <van-grid-item use-slot wx:for="{{ showCard }}" wx:for-item="index">
+    <van-card title="{{ showCard[index].title }}" desc="{{ showCard[index].desc }}" thumb="{{ showCard[index].imgUrl }}" thumb-mode="widthtFix" />
+  </van-grid-item>
+</van-grid>
